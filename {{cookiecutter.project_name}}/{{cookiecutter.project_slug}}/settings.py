@@ -84,7 +84,7 @@ WSGI_APPLICATION = "baby_feeding_log.wsgi.application"
 # Database
 # https://docs.djangoproject.com/en/5.1/ref/settings/#databases
 # By default uses DB_URL env variable
-DATABASES = {"default": dj_database_url.config()}
+DATABASES = {"default": dj_database_url.config(env="DB_URL")}
 
 
 # Password validation

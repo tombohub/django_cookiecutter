@@ -8,6 +8,7 @@ dependencies = [
     "django-browser-reload>=1.17.0",
     "django>=5.1.5",
     "python-dotenv>=1.0.1",
+    "gunicorn>=23.0.0",
 ]
 
 [dependency-groups]

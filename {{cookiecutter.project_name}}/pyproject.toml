@@ -12,6 +12,8 @@ dependencies = [
     "dj-database-url>=2.3.0",
     "psycopg2>=2.9.10",
     "django-fastdev>=1.13.0",
+    "django-crispy-forms>=2.3",
+    "crispy-bootstrap5>=2024.10",
 ]
 
 [dependency-groups]

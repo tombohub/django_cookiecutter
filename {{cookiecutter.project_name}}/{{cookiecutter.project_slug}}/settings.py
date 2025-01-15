@@ -46,6 +46,8 @@ INSTALLED_APPS = [
     # packages
     "django_browser_reload",
     "django_fastdev",
+    "crispy_forms",
+    "crispy_bootstrap5",
     # apps
     "{{cookiecutter.app_name}}",
 ]
@@ -130,3 +132,5 @@ STATIC_URL = "static/"
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
 CSRF_TRUSTED_ORIGINS = os.getenv("CSRF_TRUSTED_ORIGINS", "").split(",")
+
+CRISPY_TEMPLATE_PACK = "bootstrap5"

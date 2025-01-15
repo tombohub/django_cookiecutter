@@ -45,6 +45,7 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
     # packages
     "django_browser_reload",
+    "django_fastdev",
     # apps
     "{{cookiecutter.app_name}}",
 ]

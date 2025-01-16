@@ -8,6 +8,26 @@
     <title>{{cookiecutter.app_name}}</title>
 </head>
 <body>
+        <nav class="navbar bg-light navbar-expand-lg">
+        <div class="container-fluid">
+            <a href="{% url 'home' %}" class="navbar-brand">Home</a>
+            <button class="navbar-toggler" data-bs-toggle="offcanvas" data-bs-target="#offcanvas">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+    </nav>
+    <div class="offcanvas offcanvas-start" id="offcanvas">
+        <div class="offcanvas-header">
+            <button class="btn-close" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="nav flex-column">
+                <li class="nav-item">
+                    <a href="{% url 'admin:index' %}" class="nav-link">Admin</a>
+                </li>
+            </ul>
+        </div>
+    </div>
     <main class="container">
         {% if messages %}
             {% for message in messages %}

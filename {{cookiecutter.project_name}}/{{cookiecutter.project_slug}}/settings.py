@@ -48,6 +48,7 @@ INSTALLED_APPS = [
     "django_fastdev",
     "crispy_forms",
     "crispy_bootstrap5",
+    "django_extensions",
     # apps
     "{{cookiecutter.app_name}}",
 ]

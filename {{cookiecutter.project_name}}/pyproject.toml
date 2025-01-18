@@ -15,6 +15,7 @@ dependencies = [
     "django-crispy-forms>=2.3",
     "crispy-bootstrap5>=2024.10",
     "django-extensions>=3.2.3",
+    "whitenoise>=6.8.2",
 ]
 
 [dependency-groups]

@@ -11,7 +11,7 @@ class SuperuserRequiredMiddleware:
 
     def __call__(self, request: HttpRequest) -> Any:
         if not request.user.is_superuser:  # type: ignore
-            if request.path != reverse("admin:login"):
-                return redirect("admin:login")
+            if request.path != reverse("login"):
+                return redirect("login")
         response = self.get_response(request)
         return response

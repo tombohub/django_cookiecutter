@@ -22,4 +22,4 @@ dependencies = [
 dev = ["djlint>=1.36.4", "pywatchman>=2.0.0"]
 
 [tool.djlint]
-ignore = "H030,H031"
+ignore = "H030,H031,T002"

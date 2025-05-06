@@ -11,7 +11,11 @@
         {% raw %}
         {% csrf_token %}
         {% endraw %}
+
+        {% raw %}
         {{ form|crispy }}
+        {% endraw %}
+
         <button class="btn btn-primary">Log In</button>
     </div>
 </form>

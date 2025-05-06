@@ -1,12 +1,16 @@
 {% extends '{{cookiecutter.app_name}}/base.html' %}
+
+{% raw %}
 {% load crispy_forms_tags %}
+{% endraw %}
+
 {% block content %}
-    <h2>Log In</h2>
-    <form method="post">
-        <div class="vstack">
-            {% csrf_token %}
-            {{ form|crispy }}
-            <button class="btn btn-primary">Log In</button>
-        </div>
-    </form>
+<h2>Log In</h2>
+<form method="post">
+    <div class="vstack">
+        {% csrf_token %}
+        {{ form|crispy }}
+        <button class="btn btn-primary">Log In</button>
+    </div>
+</form>
 {% endblock content %}

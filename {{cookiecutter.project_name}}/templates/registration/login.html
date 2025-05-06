@@ -8,7 +8,9 @@
 <h2>Log In</h2>
 <form method="post">
     <div class="vstack">
+        {% raw %}
         {% csrf_token %}
+        {% endraw %}
         {{ form|crispy }}
         <button class="btn btn-primary">Log In</button>
     </div>

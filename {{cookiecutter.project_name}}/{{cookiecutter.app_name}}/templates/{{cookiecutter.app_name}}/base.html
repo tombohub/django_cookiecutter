@@ -34,9 +34,7 @@
                 <li class="nav-item">
                     {% if user.is_authenticated %}
                     <form action="{% url 'logout' %}" method="post">
-                        {% raw %}
                         {% csrf_token %}
-                        {% endraw %}
                         <button class="nav-link">Log Out</button>
                     </form>
                     {% else %}
